@@ -16,7 +16,7 @@ export default function IndexPage() {
       </div>
       <div class="flex h-screen items-end">
         <ul class="flex flex-grow flex-wrap p-10 lg:text-3xl sm:text-2xl">
-          <li class="flex flex-grow md:justify-start sm:justify-center">
+          <li class="flex flex-grow md:justify-start sm:justify-center mx-10">
             <a href="mailto:squad@infinitescroll.org">squad@infinitescroll.org
             </a>
             </li>
