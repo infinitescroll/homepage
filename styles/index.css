@@ -1,6 +1,61 @@
 @tailwind base;
 
 /* Write your own custom base styles here */
+@layer base {
+  @font-face {
+    font-family: "Arial Grotesk";
+    src: url("/arialgrotesk-trial-regular-webfont.woff2") format("woff2"); /* Super Modern Browsers */
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: "Arial Grotesk";
+    src: url("/arialgrotesk-trial-heavyitalic-webfont.woff2") format("woff2"); /* Super Modern Browsers */
+    font-weight: 800;
+  }
+
+  * {
+    font-family: "Arial Grotesk";
+  }
+
+  .text-header {
+    @apply uppercase;
+    font-size: 23vw;
+    transform: translate(-4vw, -10vw);
+  }
+
+  .text-footer {
+    @apply uppercase;
+    font-size: 26vw;
+    transform: translate(-6vw, 14vw);
+
+    @media screen and (max-width: 800px) {
+      .text-footer {
+        transform: translate(-6vw, 20vh);
+      }
+    }
+  }
+
+  h1 {
+    @apply text-2xl;
+    font-family: "Arial Grotesk";
+    font-weight: 800;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  h3 {
+    @apply text-lg;
+  }
+
+  a {
+    @apply transition duration-500 ease-in-out;
+  }
+
+  a:hover {
+    @apply underline;
+  }
+}
 
 /* Start purging... */
 @tailwind components;
@@ -16,3 +71,8 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
+@layer utilities {
+  .h-doublescreen {
+    min-height: 200vh;
+  }
+}
