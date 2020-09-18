@@ -20,12 +20,16 @@
 
   .text-header {
     @apply uppercase;
+    color: rgba(100, 100, 100, 0.001);
+    -webkit-text-stroke: 1px #000;
+  }
+
+  .text-header-top {
     font-size: 23vw;
     transform: translate(-4vw, -10vw);
   }
 
-  .text-footer {
-    @apply uppercase;
+  .text-header-bottom {
     font-size: 26vw;
     transform: translate(-6vw, 14vw);
 
@@ -34,6 +38,16 @@
         transform: translate(-6vw, 20vh);
       }
     }
+  }
+
+  .text-logo {
+    font-size: 6vw;
+    color: #60f033;
+    -webkit-text-stroke: 1px #000;
+  }
+
+  .text-logo-bottom {
+    transform: translate(0px, -60px);
   }
 
   h1 {
@@ -54,6 +68,10 @@
 
   a:hover {
     @apply underline;
+  }
+
+  .container-logo {
+    transform: translate(19vw);
   }
 }
 
