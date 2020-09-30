@@ -24,30 +24,24 @@
     -webkit-text-stroke: 1px #000;
   }
 
-  .text-header-top {
-    font-size: 23vw;
-    transform: translate(-4vw, -10vw);
+  .container-logo {
+    /* transform: translate(19vw, 4vh); */
   }
 
-  .text-header-bottom {
-    font-size: 26vw;
-    transform: translate(-6vw, 14vw);
-
-    @media screen and (max-width: 800px) {
-      .text-footer {
-        transform: translate(-6vw, 20vh);
-      }
+  @media screen and (max-width: 480px) {
+    .container-logo {
+      /* transform: translate(12vw, 4vw); */
     }
   }
 
   .text-logo {
-    font-size: 6vw;
+    font-size: calc(3rem + 4vw);
     color: #60f033;
     -webkit-text-stroke: 1px #000;
   }
 
   .text-logo-bottom {
-    transform: translate(0px, -60px);
+    transform: translateY(-62%);
   }
 
   h1 {
@@ -68,10 +62,6 @@
 
   a:hover {
     @apply underline;
-  }
-
-  .container-logo {
-    transform: translate(19vw);
   }
 }
 
