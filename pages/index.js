@@ -11,16 +11,16 @@ export default function IndexPage() {
         <h1 className="text-logo block">INFINITE</h1>
         <h1 className="text-logo text-logo-bottom inline-block">SCROLL</h1>
         </div>
-        <ul class="flex flex-col w-full flex-wrap">
+        <ul className="flex flex-col w-full flex-wrap">
           <li className="flex flex-wrap flex-grow  justify-start mb-4 xl:mb-16">
           <h2 className="block xl:text-6xl lg:text-3xl text-2xl text-left">
           Subversive software for optimistic internets
         </h2>
           </li>
           
-          <li class="flex-grow max-w-xs">
-          <ul class='flex flex-wrap justify-start xl:text-5xl text-1xl'>
-          <li class="flex flex-grow md:justify-start my-3 xl:my-6">
+          <li className="flex-grow max-w-xs">
+          <ul className='flex flex-wrap justify-start xl:text-5xl text-1xl'>
+          <li className="flex flex-grow md:justify-start my-3 xl:my-6">
             <a href="mailto:squad@infinitescroll.org?Subject=Squaaaa">squad@infinitescroll.org
             </a>
             </li>
@@ -41,8 +41,9 @@ export default function IndexPage() {
 
         </ul>
       </div>
-      <div className="absolute width-full h-screen">
-      <video autoPlay='true' muted="true" loop="true" preload="auto" class="object-cover width-full h-full z-10 fixed" style={{objectPosition: `21%`}}>
+      <div className="absolute w-full h-screen">
+      <video autoPlay='true' muted="true" loop="true" preload="auto" className="object-cover w-full h-full z-10 fixed" style={{objectPosition: `21%`}}>
+        <picture src="/infinitescroll.jpg" />
         <source  src="/infinitescroll.mp4" type="video/mp4" />
       </video>
       </div>  
