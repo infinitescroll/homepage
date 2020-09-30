@@ -40,18 +40,6 @@
       /* transform: translate(12vw, 4vw); */
     }
   }
-  /* 
-  h1 {
-    font-family: "Arial Grotesk", "system-ui";
-    font-style: italic;
-    font-weight: 800;
-  } */
-
-  /* .text-logo {
-    font-size: calc(3rem + 4vw);
-    color: #60f033;
-    -webkit-text-stroke: 1px #000;
-  } */
 
   .text-logo-bottom {
     transform: translateY(-62%);
