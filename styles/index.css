@@ -4,18 +4,23 @@
 @layer base {
   @font-face {
     font-family: "Arial Grotesk";
-    src: url("/arialgrotesk-trial-regular-webfont.woff2") format("woff2"); /* Super Modern Browsers */
+    src: url("/ArialGrotesk-Regular.woff") format("woff"),
+      url("/ArialGrotesk-Regular.ttf") format("ttf");
     font-weight: 400;
+    text-rendering: optimizeLegibility;
   }
 
   @font-face {
     font-family: "Arial Grotesk";
-    src: url("/arialgrotesk-trial-heavyitalic-webfont.woff2") format("woff2"); /* Super Modern Browsers */
+    src: url("/ArialGrotesk-HeavyItalic.woff") format("woff"),
+      url("/ArialGrotesk-HeavyItalic.ttf") format("ttf");
+    font-style: italic;
     font-weight: 800;
+    text-rendering: optimizeLegibility;
   }
 
   * {
-    font-family: "Arial Grotesk", "system-ui";
+    font-family: "Arial Grotesk", "system-ui" !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -35,22 +40,32 @@
       /* transform: translate(12vw, 4vw); */
     }
   }
+  /* 
+  h1 {
+    font-family: "Arial Grotesk", "system-ui";
+    font-style: italic;
+    font-weight: 800;
+  } */
 
-  .text-logo {
+  /* .text-logo {
     font-size: calc(3rem + 4vw);
     color: #60f033;
     -webkit-text-stroke: 1px #000;
-  }
+  } */
 
   .text-logo-bottom {
     transform: translateY(-62%);
   }
 
   h1 {
-    @apply text-2xl;
-    font-family: "Arial Grotesk";
+    font-family: "Arial Grotesk", "system-ui";
+    color: #60f033;
+    font-size: calc(3rem + 4vw);
     font-weight: 800;
+    font-style: italic;
+    -webkit-text-stroke: 1px #000;
   }
+
   h2 {
     @apply text-xl;
   }
