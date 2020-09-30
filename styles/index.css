@@ -16,6 +16,8 @@
 
   * {
     font-family: "Arial Grotesk";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   .text-header {
