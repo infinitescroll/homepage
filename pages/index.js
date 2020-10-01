@@ -41,8 +41,8 @@ export default function IndexPage() {
 
         </ul>
       </div>
-      <div controls className="absolute w-full h-screen">
-      <video controls={false} autoPlay={true} muted={true} loop={true} preload='auto' className="object-cover w-full h-full z-10 fixed" style={{objectPosition: `21%`}} poster="/infinitescroll.jpg">
+      <div className="absolute w-full h-screen">
+      <video autobuffer playsInline={true} controls={false} autoPlay={true} muted={true} loop={true} preload='auto' className="object-cover w-full h-full z-10 fixed" style={{objectPosition: `21%`}} poster="/infinitescroll.jpg">
         <source  src="/infinitescroll.mp4" type="video/mp4" />
       </video>
       </div>  
