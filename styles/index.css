@@ -2,6 +2,16 @@
 
 /* Write your own custom base styles here */
 @layer base {
+  html {
+    height: -webkit-fill-available;
+  }
+
+  body {
+    min-height: 100vh;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
+  }
+
   @font-face {
     font-family: "Arial Grotesk";
     src: url("/ArialGrotesk-Regular.woff") format("woff"),
@@ -67,7 +77,19 @@
 /* Stop purging. */
 
 /* Write you own custom component styles here */
+.h-fill-available {
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: fill-available;
+}
 
 /* Start purging... */
 @tailwind utilities;
 /* Stop purging. */
+
+/* Your own custom utilities */
+@layer utilities {
+  .h-doublescreen {
+    min-height: 200vh;
+  }
+}

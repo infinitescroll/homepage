@@ -1,6 +1,6 @@
 export default function IndexPage() {
   return (
-    <div className="flex flex-col h-screen bg-cover overflow-hidden">
+    <div className="flex flex-col h-fill-available bg-cover overflow-hidden">
       <div className="flex flex-wrap xl:w-1/3 lg:w-1/2 w-full h-screen items-end z-40 xl:p-12 sm:p-10 p-3 text-2xl">
         <div className="container-logo inline-block">
           <h1>INFINITE</h1>
