@@ -20,7 +20,9 @@
   }
 
   * {
-    font-family: "Arial Grotesk", "system-ui" !important;
+    font-family: "Arial Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -29,16 +31,6 @@
     @apply uppercase;
     color: rgba(100, 100, 100, 0.001);
     -webkit-text-stroke: 1px #000;
-  }
-
-  .container-logo {
-    /* transform: translate(19vw, 4vh); */
-  }
-
-  @media screen and (max-width: 480px) {
-    .container-logo {
-      /* transform: translate(12vw, 4vw); */
-    }
   }
 
   .text-logo-bottom {
@@ -75,17 +67,7 @@
 /* Stop purging. */
 
 /* Write you own custom component styles here */
-.btn-blue {
-  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
-}
 
 /* Start purging... */
 @tailwind utilities;
 /* Stop purging. */
-
-/* Your own custom utilities */
-@layer utilities {
-  .h-doublescreen {
-    min-height: 200vh;
-  }
-}
