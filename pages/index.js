@@ -31,7 +31,7 @@ export default function IndexPage() {
             </a>
             </li>
           <li className="mx-2">
-            <a href="https://www.are.na/infinitescroll/" target="_blank">
+            <a href="https://www.are.na/infinite-scroll/" target="_blank">
             Are.na
             </a>
           </li>
