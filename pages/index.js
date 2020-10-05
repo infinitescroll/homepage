@@ -41,7 +41,7 @@ export default function IndexPage() {
               <ul className="flex">
                 <li className="mr-2">
                   <a
-                    href="https://www.github.com/openworklabs/"
+                    href="https://www.github.com/infinitescroll/"
                     target="_blank"
                   >
                     GitHub
@@ -49,7 +49,7 @@ export default function IndexPage() {
                 </li>
                 <li className="mx-2">
                   <a
-                    href="https://www.twitter.com/infinitescroll/"
+                    href="https://www.twitter.com/infinitescroll_/"
                     target="_blank"
                   >
                     Twitter
@@ -75,7 +75,11 @@ export default function IndexPage() {
           loop={true}
           preload="auto"
           className="absolute object-cover w-full h-full z-10 fixed"
-          style={{ objectPosition: `21%` }}
+          style={
+            timeOfDay === "day"
+              ? { objectPosition: `70%` }
+              : { objectPosition: `21%` }
+          }
           poster={"infinitescroll-" + timeOfDay + ".jpg"}
         >
           <source
