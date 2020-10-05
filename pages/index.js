@@ -26,13 +26,13 @@ export default function IndexPage() {
           }`}
         >
           <li className='flex flex-wrap justify-start mb-4 xl:mb-16'>
-            <h2 className='xl:text-4xl sm:text-3xl text-3xl text-left'>
+            <h2 className='xl:text-5xl sm:text-3xl text-3xl text-left'>
               Subversive software for optimistic internets
             </h2>
           </li>
 
           <li className='max-w-xs'>
-            <ul className='flex flex-wrap justify-start xl:text-5xl text-1xl'>
+            <ul className='flex flex-wrap justify-start xl:text-4xl text-1xl'>
               <li className='flex flex-grow md:justify-start my-3 xl:my-6'>
                 <a href='mailto:squad@infinitescroll.org?Subject=Squaaaa'>
                   squad@infinitescroll.org
