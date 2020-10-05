@@ -4,7 +4,7 @@ export default function IndexPage() {
   const [timeOfDay, setTimeOfDay] = useState("");
   useEffect(() => {
     const hour = new Date().getHours();
-    if (hour < 4 || hour > 18) {
+    if (hour < 4 || hour >= 18) {
       setTimeOfDay("night");
     } else if (hour >= 4 && hour <= 11) {
       setTimeOfDay("morning");
