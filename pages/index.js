@@ -75,7 +75,11 @@ export default function IndexPage() {
           loop={true}
           preload='auto'
           className='absolute object-cover w-full h-full z-10 fixed'
-          style={{ objectPosition: `21%` }}
+          style={
+            timeOfDay === 'day'
+              ? { objectPosition: `70%` }
+              : { objectPosition: `21%` }
+          }
           poster={'infinitescroll-' + timeOfDay + '.jpg'}
         >
           <source
