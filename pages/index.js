@@ -77,7 +77,12 @@ export default function IndexPage() {
         style={{ objectPosition: `21%` }}
         poster={'infinitescroll-' + timeOfDay + '.jpg'}
       >
-        <source src={'infinitescroll-' + timeOfDay + '.mp4'} type='video/mp4' />
+        {timeOfDay && (
+          <source
+            src={'infinitescroll-' + timeOfDay + '.mp4'}
+            type='video/mp4'
+          />
+        )}
       </video>
       {/* <video
         autobuffer
