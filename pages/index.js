@@ -6,7 +6,7 @@ export default function IndexPage() {
           <h1>INFINITE</h1>
           <h1 className="text-logo-bottom inline-block">SCROLL</h1>
         </div>
-        <ul className="flex flex-col w-full">
+        <ul className="flex flex-col w-full ">
           <li className="flex flex-wrap justify-start mb-4 xl:mb-16">
             <h2 className="xl:text-6xl sm:text-3xl text-3xl text-left">
               Subversive software for optimistic internets
@@ -57,10 +57,38 @@ export default function IndexPage() {
         preload="auto"
         className="absolute object-cover w-full h-full z-10 fixed"
         style={{ objectPosition: `21%` }}
+        poster="/infinitescroll-morning.jpg"
+      >
+        <source src="/infinitescroll-morning.mp4" type="video/mp4" />
+      </video>
+      {/* <video
+        autobuffer
+        playsInline={true}
+        controls={false}
+        autoPlay={true}
+        muted={true}
+        loop={true}
+        preload="auto"
+        className="absolute object-cover w-full h-full z-10 fixed"
+        style={{ objectPosition: `70%` }}
         poster="/infinitescroll.jpg"
       >
-        <source src="/infinitescroll.mp4" type="video/mp4" />
-      </video>
+        <source src="/infinitescroll-day.mp4" type="video/mp4" />
+      </video> */}
+      {/* <video
+        autobuffer
+        playsInline={true}
+        controls={false}
+        autoPlay={true}
+        muted={true}
+        loop={true}
+        preload="auto"
+        className="absolute object-cover w-full h-full z-10 fixed"
+        style={{ objectPosition: `21%` }}
+        poster="/infinitescroll-night.jpg"
+      >
+        <source src="/infinitescroll-night.mp4" type="video/mp4" />
+      </video> */}
     </div>
   );
 }
