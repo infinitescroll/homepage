@@ -7,7 +7,6 @@
             "image": "infinitescroll/homepage:latest",
             "cpu": 128,
             "memory": 256,
-            "memoryReservation": 0,
             "portMappings": [
                 {
                     "containerPort": 3000,
@@ -16,23 +15,6 @@
                 }
             ],
             "essential": true,
-            "entryPoint": [
-                ""
-            ],
-            "command": [
-                ""
-            ],
-            "environment": [
-                {
-                    "name": "",
-                    "value": ""
-                }
-            ],
-            "startTimeout": 0,
-            "stopTimeout": 0,
-            "hostname": "",
-            "user": "",
-            "workingDirectory": "",
             "disableNetworking": true,
             "privileged": true,
             "readonlyRootFilesystem": true,
