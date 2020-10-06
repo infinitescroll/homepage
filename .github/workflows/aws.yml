@@ -26,6 +26,10 @@
 on:
   release:
     types: [created]
+  push:
+    branches: [ primary ]
+  pull_request:
+    branches: [ primary ]
 
 name: Deploy to Amazon ECS
 
