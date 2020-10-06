@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "next",
-    "docker-build": "docker build -t infinitescroll/www:latest .",
-    "docker-run": "docker run --detach -p 3000:3000 --name wwww --restart always infinitescroll/www",
+    "docker-build": "docker build --no-cache -t infinitescroll/homepage:latest .",
+    "docker-run": "docker run --detach -p 3000:3000 --name wwww --restart always infinitescroll/homepage",
     "build": "next build",
     "lint": "echo 'Success'",
     "test": "echo 'Success'",

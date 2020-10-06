@@ -6,6 +6,7 @@ RUN apk add --no-cache nodejs-current
 WORKDIR /root/app
 # copy project file
 COPY package.json  .
+COPY package-lock.json  .
 COPY tailwind.config.js  .
 COPY postcss.config.js  .
 
@@ -19,7 +20,6 @@ RUN npm set progress=false && npm config set depth 0
 
 # install global packages
 RUN npm install -g typescript
-##RUN npm install -g tailwindcss
 
 # install only production node_modules 
 RUN npm install --only=production 
