@@ -5,8 +5,8 @@
         {
             "name": "infinitescroll-homepage",
             "image": "infinitescroll/homepage:latest",
-            "cpu": 0,
-            "memory": 0,
+            "cpu": 128,
+            "memory": 256,
             "memoryReservation": 0,
             "portMappings": [
                 {
