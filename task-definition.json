@@ -15,7 +15,7 @@
                 }
             ],
             "essential": true,
-            "disableNetworking": true,
+            "disableNetworking": false,
             "privileged": true,
             "readonlyRootFilesystem": true,
             "interactive": true,
