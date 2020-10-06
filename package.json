@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "next",
     "docker-build": "docker build --no-cache -t infinitescroll/homepage:latest .",
-    "docker-run": "docker run --detach -p 3000:3000 --name wwww --restart always infinitescroll/homepage",
+    "docker-run": "docker run --detach -p 3000:3000 --name homepage --restart always infinitescroll/homepage",
+    "docker-stop": "docker stop homepage",
+    "docker-rm": "docker rm homepage",
     "build": "next build",
     "lint": "echo 'Success'",
     "test": "echo 'Success'",
