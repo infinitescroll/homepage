@@ -60,15 +60,4 @@ export default {
       url: 'https://www.ledger.com/',
     },
   ],
-  parentOrganization: {
-    '@type': 'Organization',
-    name: 'Infinite Scroll',
-    description: 'Self-sustaining systems for the worlds to come.',
-    url: 'https://infinitescroll.org',
-    sameAs: [
-      'https://github.com/infinitescroll',
-      'https://twitter.com/infinitescroll_',
-      'https://www.are.na/infinite-scroll',
-    ],
-  },
 }
