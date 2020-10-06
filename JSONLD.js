@@ -16,6 +16,7 @@ export default {
         'A web wallet to manage your Filecoin on your Ledger device.',
       applicationCategory: 'Cryptocurrency wallet',
       operatingSystem: 'All',
+      url: 'https://wallet.glif.io',
     },
     {
       '@type': 'WebApplication',
@@ -37,6 +38,7 @@ export default {
       description: 'Quickly, easily receive Filecoin to test and develop with.',
       applicationCategory: 'Cryptocurrency faucet',
       operatingSystem: 'All',
+      url: 'https://faucet.glif.io',
     },
     {
       '@type': 'WebApplication',
@@ -44,6 +46,7 @@ export default {
       description: 'Earn "verified" Filecoin storage when you verify yourself.',
       applicationCategory: 'Blockchain user validation',
       operatingSystem: 'All',
+      url: 'https://verify.glif.io/',
     },
   ],
   knowsAbout: [
