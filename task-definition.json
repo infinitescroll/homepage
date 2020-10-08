@@ -1,0 +1,29 @@
+{
+    "family": "website",
+    "networkMode": "awsvpc",
+    "containerDefinitions": [
+        {
+            "name": "infinitescroll-homepage",
+            "image": "infinitescroll/homepage:latest",
+            "cpu": 128,
+            "memory": 256,
+            "portMappings": [
+                {
+                    "containerPort": 3000,
+                    "hostPort": 3000,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "disableNetworking": false,
+            "privileged": true,
+            "readonlyRootFilesystem": true,
+            "interactive": true,
+            "pseudoTerminal": true
+        }
+    ],
+    "cpu": "128",
+    "memory": "500",
+    "pidMode": "host",
+    "ipcMode": "none"
+}
