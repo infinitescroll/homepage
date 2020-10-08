@@ -13,6 +13,7 @@ function MyApp({ Component, pageProps }) {
           name="viewport"
           content="initial-scale=1.0, width=device-width"
           charset="utf-8"
+          version='1.0'
         />
         <link
           rel="apple-touch-icon"
