@@ -13,14 +13,14 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "latest",
+    "next": "9.5.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "postcss-flexbugs-fixes": "4.2.1",
     "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "^1.7.4"
+    "tailwindcss": "1.8"
   },
   "license": "MIT"
 }

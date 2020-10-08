@@ -23,13 +23,13 @@ RUN npm set progress=false && npm config set depth 0
 #RUN npm install -g typescript
 
 # install only production node_modules 
-RUN npm install --only=production 
+RUN npm ci --only=production 
 
 # copy production node_modules aside
 RUN cp -R node_modules prod_node_modules
 
 # install ALL node_modules, including 'devDependencies'
-RUN npm install
+RUN npm ci
 
 # build the production application in the .next folder
 RUN npm run build
