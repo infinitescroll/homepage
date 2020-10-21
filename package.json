@@ -10,7 +10,7 @@
     "build": "next build",
     "lint": "echo 'Success'",
     "test": "echo 'Success'",
-    "start": "next start"
+    "start": "next start -p ${PORT-3000}"
   },
   "dependencies": {
     "next": "9.5.3",
