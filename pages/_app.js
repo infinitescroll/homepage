@@ -15,6 +15,18 @@ function MyApp({ Component, pageProps }) {
           charset="utf-8"
           version="1.1"
         />
+        <meta
+          name='description'
+          content='Self-sustaining systems for the worlds to come.'
+        />
+        <meta property="og:site_name" content="Infinite Scroll"></meta>
+        <meta property="og:title" content="Infinite Scroll" />
+        <meta property="og:url" content="https://infinitescroll.org/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="Self-sustaining systems for the worlds to come."/>
+        <meta property="og:image" content="https://infinitescroll.org/og.png" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:image" content="https://infinitescroll.org/og.png" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
